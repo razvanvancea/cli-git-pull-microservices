@@ -40,7 +40,7 @@ alias pullqa="python3 $HOME/cli-git-pull-microservices/git_pull.py"
 source ~/.bashrc
 ```
 
-### Done. Whenever you want git pull, open up the terminal and type the alias that you set in the 3rd step
+### Done. :100: Simply open up the terminal and type the alias that you set in the 3rd step
 ```
 pullqa
 ```
