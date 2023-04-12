@@ -8,7 +8,6 @@ repositories=["automation","users","webapp"]
 #update 'branch' with your default branch name: 'main' or 'master'?
 branch="main"
 
-
 git = " && git checkout "+branch+" && git pull && git checkout -"
 for repo in repositories:
     print("========== "+repo+" ==========")
