@@ -19,7 +19,7 @@ const projectConfig: RequiredDetails = {
     "user-service",
     "admin-service",
     "backend-service",
-    "frontend-service"
+    "frontend-service",
   ],
   branch: "main",
 };
@@ -31,15 +31,15 @@ projectConfig.repositories.forEach((repo) => {
     `cd ${projectConfig.basePath}${repo}${git}`,
     (error: any, stdout: any, stderr: any) => {
       console.log(`===== ${repo} =====`);
-       if (error) {
-           console.log(`error: ${error.message}`);
-           return;
-       }
-       if (stderr) {
-           console.log(`stderr: ${stderr}`);
-           return;
-       }
+      if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+      }
+      if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+      }
       console.log(`${stdout}`);
-    }
+    },
   );
 });
