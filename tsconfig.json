@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "module": "commonjs",                                /* Specify what module code is generated. */                   /* Only output d.ts files and not JavaScript files. */
-    "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */                                 /* Specify an output folder for all emitted files. */
-    "removeComments": true,                           /* Disable emitting comments. */                          /* Disable generating custom helper functions like '__extends' in compiled output. */
-    "noEmitOnError": true,                            /* Disable emitting files if any type checking errors are reported. */           /* Allow 'import x from y' when a module doesn't have a default export. */
-    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
-    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
-    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-    "strict": true,                           /* Ensure 'use strict' is always emitted. */
-    "noUnusedLocals": true,             /* Interpret optional property types as written, rather than adding 'undefined'. */
-    "noImplicitReturns": true,                        /* Enable error reporting for codepaths that do not explicitly return in a function. */                     /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "target": "es2016",                        
+    "module": "commonjs",                           
+    "sourceMap": true,                              
+    "removeComments": true,                         
+    "noEmitOnError": true,                      
+    "esModuleInterop": true,                  
+    "forceConsistentCasingInFileNames": true,          
+    "strict": true, 
+    "noUnusedLocals": true,
+    "noImplicitReturns": true, 
+    "skipLibCheck": true
   }
 }
