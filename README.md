@@ -10,16 +10,10 @@ NodeJS + NPM pre-installed
 Git pre-installed
 <br />
 
-### Step 1 - Open up a Terminal and clone this repository
+### Step 1 - Open up a Terminal and clone & install this project
 ```sh
-cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices && cd $HOME/cli-git-pull-microservices
+cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices && cd $HOME/cli-git-pull-microservices && npm install
 ```
-
-### Step 2 - NPM INSTALL
-```sh
-cd $HOME/cli-git-pull-microservices && npm install
-```
-
 
 ### Step 3 - Edit the git-pull.ts file - line number 15: replace the projectConfig object with your own configuration
 ```
