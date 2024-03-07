@@ -1,0 +1,16 @@
+{
+  "name": "cli-git-pull-microservices",
+  "version": "1.0.0",
+  "description": "<span align=\"center\">",
+  "main": "index.js",
+  "scripts": {
+    "pull": "npx ts-node git-pull.ts"
+  },
+  "keywords": [],
+  "author": "RV",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
