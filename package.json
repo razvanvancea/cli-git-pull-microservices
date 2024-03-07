@@ -4,7 +4,7 @@
   "description": "<span align=\"center\">",
   "main": "index.js",
   "scripts": {
-    "pull": "npx ts-node git-pull.ts"
+    "pullqa": "npx ts-node git-pull.ts"
   },
   "keywords": [],
   "author": "RV",
