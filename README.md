@@ -6,8 +6,8 @@
 
 OS: MacOS or Linux
 
-Python preinstalled
-
+NodeJS + NPM pre-installed
+Git pre-installed
 <br />
 
 ### Step 1 - Open up a Terminal and clone this repository
@@ -15,13 +15,20 @@ Python preinstalled
 cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices && cd $HOME/cli-git-pull-microservices
 ```
 
-### Step 2 - Edit git_pull.py file according to your needs: 
+### Step 2 - NPM INSTALL
+```sh
+cd $HOME/cli-git-pull-microservices && npm install
+```
 
-a. Project root name (the folder that includes all the git repositories)
 
-b. repositories list 
+### Step 3 - Edit the git-pull.ts file - line number 15: replace the projectConfig object with your own configuration
+```
 
-c. default branch: main or master
+a. projectConfig.basePath should be the folder that includes all the git microservice repositories
+
+b. projectConfig.repositories should be an array with the name of repositories that you want to pull 
+
+c. projectConfig.branch should be the default branch: main or master
 
 ### Step 3 - Create a script alias
 use a text editor to open your ~/.bashrc / ~/.zshrc / ~/.bash_profile (depending on your setup)
@@ -32,7 +39,7 @@ vim ~/.bashrc
 
 Add a new alias, as it follows (feel free to replace 'pullqa' with other name)
 ```
-alias pullqa="python3 $HOME/cli-git-pull-microservices/git_pull.py"
+alias pullqa="cd $HOME/cli-git-pull-microservices && npm run pullqa && cd -"
 ```
 
 ### Step 4 - source the file
