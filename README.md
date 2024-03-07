@@ -17,14 +17,13 @@ cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices
 ```
 
 
-### Step 3 - Edit the git-pull.ts file - line number 15: replace the projectConfig object with your own configuration
-```
-
+### Step 2 - Edit the git-pull.ts file - line number 15: replace the projectConfig object with your own configuration
 a. projectConfig.basePath should be the folder that includes all the git microservice repositories
 
 b. projectConfig.repositories should be an array with the name of repositories that you want to pull 
 
 c. projectConfig.branch should be the default branch: main or master
+
 
 ### Step 3 - Create a script alias
 use a text editor to open your ~/.bashrc / ~/.zshrc / ~/.bash_profile (depending on your setup)
@@ -44,7 +43,7 @@ alias pullqa="cd $HOME/cli-git-pull-microservices && npm run pullqa && cd -"
 source ~/.bashrc
 ```
 
-### Done. :100: Simply open up the terminal and type the alias that you set in the 3rd step
+### Done. :100: Open up the terminal and type the alias that you set in the 3rd step
 ```
 pullqa
 ```
