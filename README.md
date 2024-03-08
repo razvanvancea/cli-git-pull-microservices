@@ -17,7 +17,7 @@ cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices
 ```
 
 
-### Step 2 - Edit the git-pull.ts file - line number 15: replace the projectConfig object with your own configuration
+### Step 2 - Edit the git-pull.ts file - line number 11: replace the projectConfig object with your own configuration
 a. projectConfig.basePath should be the folder that includes all the git microservice repositories
 
 b. projectConfig.repositories should be an array with the name of repositories that you want to pull 
