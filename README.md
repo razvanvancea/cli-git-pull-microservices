@@ -32,10 +32,10 @@ use a text editor to open your ~/.bashrc / ~/.zshrc / ~/.bash_profile (depending
 vim ~/.bashrc
 ```
 
-Add a new alias, as it follows (feel free to replace 'pullqa' with other name)
+Add a new alias, as it follows (feel free to replace 'pullservices' with other project name, e.g. pullfacebook)
 
 ```
-alias pullqa="cd $HOME/cli-git-pull-microservices && npm run pullqa && cd -"
+alias pullservices="cd $HOME/cli-git-pull-microservices && npm run pullservices && cd -"
 ```
 
 ### Step 4 - source the file
@@ -47,7 +47,7 @@ source ~/.bashrc
 ### Done. :100: Open up the terminal and type the alias that you set in the 3rd step
 
 ```
-pullqa
+pullservices
 ```
 
 <br />

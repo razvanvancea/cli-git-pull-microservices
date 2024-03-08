@@ -4,7 +4,7 @@
   "description": "<span align=\"center\">",
   "main": "index.js",
   "scripts": {
-    "pullqa": "npx ts-node src/script.ts",
+    "pullservices": "npx ts-node src/script.ts",
     "prettier:fix": "npx prettier --write ."
   },
   "keywords": [],
