@@ -1,4 +1,4 @@
-## Simple script for microservices architecture projects, to make all the repositories up to date with main branch
+## Simple script for microservices architecture projects, to make all the repositories up to date with the main/master branch
 
 
 
