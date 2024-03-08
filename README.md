@@ -1,53 +1,56 @@
 ## Simple script for microservices architecture projects, to make all the repositories up to date with main branch
 
-<span align="center">
+
 
 ## Prerequisites
 
 OS: MacOS or Linux
 
-Python preinstalled
-
+NodeJS + NPM pre-installed
+Git pre-installed
 <br />
 
-### Step 1 - Open up a Terminal and clone this repository
+### Step 1 - Open up a Terminal and clone & install this project
+
 ```sh
-cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices && cd $HOME/cli-git-pull-microservices
+cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices && cd $HOME/cli-git-pull-microservices && npm install
 ```
 
-### Step 2 - Edit git_pull.py file according to your needs: 
+### Step 2 - Edit the src/script.ts file - line number 11: replace the projectConfig object with your own configuration
 
-a. Project root name (the folder that includes all the git repositories)
+a. projectConfig.basePath should be the folder that includes all the git microservice repositories
 
-b. repositories list 
+b. projectConfig.repositories should be an array with the name of repositories that you want to pull
 
-c. default branch: main or master
+c. projectConfig.branch should be the default branch: main or master
 
 ### Step 3 - Create a script alias
+
 use a text editor to open your ~/.bashrc / ~/.zshrc / ~/.bash_profile (depending on your setup)
 
 ```sh
 vim ~/.bashrc
 ```
 
-Add a new alias, as it follows (feel free to replace 'pullqa' with other name)
+Add a new alias, as it follows (feel free to replace 'pullservices' with other project name, e.g. pullfacebook)
+
 ```
-alias pullqa="python3 $HOME/cli-git-pull-microservices/git_pull.py"
+alias pullservices="cd $HOME/cli-git-pull-microservices && npm run pullservices && cd -"
 ```
 
 ### Step 4 - source the file
+
 ```
 source ~/.bashrc
 ```
 
-### Done. :100: Simply open up the terminal and type the alias that you set in the 3rd step
+### Done. :100: Open up the terminal and type the alias that you set in the 3rd step
+
 ```
-pullqa
+pullservices
 ```
 
 <br />
 
-
-
 <b> THANK YOU <b/> for using this project. Feel free to share/contribute to it.
-</span>
+

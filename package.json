@@ -1,0 +1,18 @@
+{
+  "name": "cli-git-pull-microservices",
+  "version": "1.0.0",
+  "description": "<span align=\"center\">",
+  "main": "index.js",
+  "scripts": {
+    "pullservices": "npx ts-node src/script.ts",
+    "prettier:fix": "npx prettier --write ."
+  },
+  "keywords": [],
+  "author": "RV",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
