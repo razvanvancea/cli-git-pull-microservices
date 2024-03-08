@@ -1,19 +1,15 @@
-const { exec } = require("child_process");
-type RequiredDetails = {
-  basePath: string;
-  repositories: string[];
-  branch: "main" | "master";
-};
+import { performGitPull } from "./config";
+import { RequiredDetails } from "./types";
 
 /**
  * @example const projectConfig: RequiredDetails = {
     basePath: "/Users/iamrv/Projects/qa-practice/",
-    repositories: ["infra-service","user-service","admin-service"],
+    repositories: ["infra-service","user-service","other-service"],
     branch: "main"
 };
  */
 const projectConfig: RequiredDetails = {
-  basePath: "/Users/iamrv/Projects/qa-practice/",
+  basePath: "/Users/iamrv/Projects/qa-practice/", // make sure it ends with "/"
   repositories: [
     "infra-service",
     "user-service",
@@ -24,22 +20,4 @@ const projectConfig: RequiredDetails = {
   branch: "main",
 };
 
-const git: string = ` && git checkout ${projectConfig.branch} && git pull && git checkout -`;
-
-projectConfig.repositories.forEach((repo) => {
-  exec(
-    `cd ${projectConfig.basePath}${repo}${git}`,
-    (error: any, stdout: any, stderr: any) => {
-      console.log(`===== ${repo} =====`);
-      if (error) {
-        console.log(`error: ${error.message}`);
-        return;
-      }
-      if (stderr) {
-        console.log(`stderr: ${stderr}`);
-        return;
-      }
-      console.log(`${stdout}`);
-    },
-  );
-});
+performGitPull(projectConfig);
