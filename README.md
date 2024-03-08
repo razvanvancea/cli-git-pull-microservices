@@ -16,7 +16,7 @@ Git pre-installed
 cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices && cd $HOME/cli-git-pull-microservices && npm install
 ```
 
-### Step 2 - Edit the git-pull.ts file - line number 11: replace the projectConfig object with your own configuration
+### Step 2 - Edit the src/script.ts file - line number 11: replace the projectConfig object with your own configuration
 
 a. projectConfig.basePath should be the folder that includes all the git microservice repositories
 
