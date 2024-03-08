@@ -1,6 +1,6 @@
 ## Simple script for microservices architecture projects, to make all the repositories up to date with main branch
 
-<span align="center">
+
 
 ## Prerequisites
 
@@ -53,4 +53,4 @@ pullservices
 <br />
 
 <b> THANK YOU <b/> for using this project. Feel free to share/contribute to it.
-</span>
+
