@@ -1,4 +1,4 @@
-import { performGitPull } from "./config";
+import { performGitPull } from "./utils";
 import { RequiredDetails } from "./types";
 
 /**
