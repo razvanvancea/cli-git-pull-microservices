@@ -1,12 +1,10 @@
 import { RequiredDetails } from "./types";
 const { exec } = require("child_process");
 
+export function performGitPull(projectConfig: RequiredDetails) {
+  const git: string = ` && git checkout ${projectConfig.branch} && git pull && git checkout -`;
 
-export function performGitPull(projectConfig:RequiredDetails){
-    const git: string = ` && git checkout ${projectConfig.branch} && git pull && git checkout -`;
-
-
-if (projectConfig.basePath.endsWith("/")) {
+  if (projectConfig.basePath.endsWith("/")) {
     projectConfig.repositories.forEach((repo) => {
       exec(
         `cd ${projectConfig.basePath}${repo}${git}`,
@@ -18,11 +16,14 @@ if (projectConfig.basePath.endsWith("/")) {
           }
           if (stderr) {
             console.log(`stderr: ${stderr}`);
-            return;
+            // return;
           }
           console.log(`${stdout}`);
         },
       );
     });
-  } else throw new Error('!!!!! projectConfig.basePath should end with "/" sign !!!!!');  
+  } else
+    throw new Error(
+      '!!!!! projectConfig.basePath should end with "/" sign !!!!!',
+    );
 }

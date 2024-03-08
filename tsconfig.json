@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es2016",                        
-    "module": "commonjs",                           
-    "sourceMap": true,                              
-    "removeComments": true,                         
-    "noEmitOnError": true,                      
-    "esModuleInterop": true,                  
-    "forceConsistentCasingInFileNames": true,          
-    "strict": true, 
+    "target": "es2016",
+    "module": "commonjs",
+    "sourceMap": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "noUnusedLocals": true,
-    "noImplicitReturns": true, 
+    "noImplicitReturns": true,
     "skipLibCheck": true
   }
 }
