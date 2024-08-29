@@ -6,8 +6,10 @@
 
 OS: MacOS or Linux
 
-NodeJS + NPM pre-installed
-Git pre-installed
+
+[NodeJS](https://nodejs.org/en/download/package-manager)
+
+[Git](https://git-scm.com/downloads)
 <br />
 
 ### Step 1 - Open up a Terminal and clone & install this project
@@ -16,7 +18,7 @@ Git pre-installed
 cd $HOME && git clone https://github.com/razvanvancea/cli-git-pull-microservices && cd $HOME/cli-git-pull-microservices && npm install
 ```
 
-### Step 2 - Edit the src/script.ts file - line number 11: replace the projectConfig object with your own configuration
+### Step 2 - Edit the src/script.ts file - line number 11: replace the projectConfig object with your configuration
 
 a. projectConfig.basePath should be the folder that includes all the git microservice repositories
 
